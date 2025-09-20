@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Control</title>
+    <!-- My own work. -->
+    <!-- Internal CSS for basic page layout. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        #text-paragraph {
+            padding: 15px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #333;
+            margin-top: 20px;
+        }
+        .controls {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .controls label, .controls input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CSS Text & Border Control</h1>
+        <p id="text-paragraph">This is a paragraph of dummy text. You can use the controls below to change its text color and the width of its border. Try entering a hexadecimal color value like `#ff5733` or a CSS color name like `blue`.</p>
+
+        <div class="controls">
+            <label for="color-input">Text Color:</label>
+            <input type="text" id="color-input" value="#333333" placeholder="e.g., #007bff">
+            <br>
+            <label for="width-input">Border Width (px):</label>
+            <input type="number" id="width-input" value="2" min="1" max="20">
+            <br>
+            <button onclick="updateStyle()">Update Style</button>
+        </div>
+    </div>
+
+    <!-- My own work. -->
+    <script>
+        /**
+         * @function updateStyle
+         * Updates the CSS style of the paragraph based on user input.
+         */
+        function updateStyle() {
+            // Get the paragraph element by its ID.
+            const paragraph = document.getElementById('text-paragraph');
+            // Get the color input field value.
+            const colorValue = document.getElementById('color-input').value;
+            // Get the border width input field value.
+            const widthValue = document.getElementById('width-input').value;
+
+            // Update the text color of the paragraph.
+            paragraph.style.color = colorValue;
+            // Update the border width of the paragraph, adding 'px' unit.
+            paragraph.style.borderWidth = widthValue + 'px';
+        }
+    </script>
+
+</body>
+</html>

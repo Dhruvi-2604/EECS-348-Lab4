@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <!-- My own work. -->
+    <!-- Internal CSS for styling the profile page. -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+        .profile-text {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .profile-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .profile-link:hover {
+            text-decoration: underline;
+        }
+        .profile-video {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1>My Personal Profile</h1>
+        <!-- An image of a generic person as a placeholder. -->
+        <img class="profile-image" src=".\IMG_4782.JPG" alt="Profile Picture">
+        <div class="profile-text">
+            <p>Hello! My name is Dhruvi Patel, and I am a student at the University of Kansas. I'm currently studying software engineering and am excited about learning web development. This profile page is part of my EECS 348 lab assignment. I am passionate about technology and its potential to solve complex problems.</p>
+            <p>In my free time, I enjoy exploring new programming languages, contributing to open-source projects, and reading about the latest trends in software. I am also an avid hiker and love spending time outdoors.</p>
+        </div>
+        <!-- A hyperlink to the University of Kansas EECS department. -->
+        <a class="profile-link" href="https://eecs.ku.edu/d113p800" target="_blank">Visit the EECS Department Website</a>
+        <!-- An embedded video from YouTube. -->
+        <iframe class="profile-video" src="https://www.youtube.com/embed/beJ8fDbX9vs" frameborder="0" 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 	allowfullscreen>
+	</iframe>
+
+    </div>
+
+</body>
+</html>
